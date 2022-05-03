@@ -1,5 +1,6 @@
 package LeetCode;
 
+// https://leetcode.com/problems/merge-intervals/
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -20,18 +21,18 @@ public class MergeIntervals {
             if (i[0] <= end) {
                 end = Math.max(end, i[1]);
             } else {
-                list.add(new int[]{start, end});
+                list.add(new int[] { start, end });
                 start = i[0];
                 end = i[1];
             }
         }
-        list.add(new int[]{start, end});
+        list.add(new int[] { start, end });
 
         return list.toArray(new int[0][]);
     }
 
     public static void main(String[] args) {
-        int[][] num = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
+        int[][] num = { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
 
         System.out.println(Arrays.deepToString(merge(num)));
     }

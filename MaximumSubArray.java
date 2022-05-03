@@ -5,7 +5,6 @@ public class MaximumSubArray {
         int sum = 0;
         int max = nums[0];
 
-
         // kadane algorithm
 
         for (int i = 0; i < nums.length; i++) {

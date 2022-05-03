@@ -1,4 +1,5 @@
 package LeetCode;
+
 // https://leetcode.com/problems/reverse-string/
 public class ReverseString {
     public void reverseString(char[] s) {

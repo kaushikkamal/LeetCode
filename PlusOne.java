@@ -1,5 +1,6 @@
 package LeetCode;
 
+// https://leetcode.com/problems/plus-one/
 import java.util.*;
 
 class PlusOne {
@@ -28,8 +29,8 @@ class PlusOne {
     }
 
     public static void main(String[] args) {
-//        int[] num = {9, 8};
-        int[] num = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        // int[] num = {9, 8};
+        int[] num = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
 
         int[] ans = plusOne(num);
         System.out.println(Arrays.toString(ans));
