@@ -2,8 +2,6 @@
 
 package LeetCode;
 
-import java.util.Arrays;
-
 public class NumberOfLinesToWriteString {
     public static int[] numberOfLines(int[] widths, String s) {
         int lines = 1;
@@ -18,17 +16,5 @@ public class NumberOfLinesToWriteString {
         }
 
         return new int[] { lines, lineWidth };
-    }
-
-    public static void main(String[] args) {
-        // int[] arr = { 4, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
-        // 10, 10, 10, 10, 10, 10, 10, 10, 10,
-        // 10 };
-        int[] arr = { 4, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
-                10 };
-        String s = "bbbcccdddaaa";
-
-        System.out.println(Arrays.toString(numberOfLines(arr, s)));
-
     }
 }

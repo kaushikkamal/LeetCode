@@ -1,7 +1,7 @@
 package LeetCode;
 
-import java.util.ArrayList;
 // https://leetcode.com/problems/most-profit-assigning-work
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -66,14 +66,5 @@ public class MostProfitAssigningWork {
             res += best;
         }
         return res;
-    }
-
-    public static void main(String[] args) {
-
-        int[] difficulty = { 13, 37, 58 };
-        int[] profit = { 4, 90, 96 };
-        int[] worker = { 34, 73, 45 };
-
-        System.out.println(maxProfitAssignment(difficulty, profit, worker));
     }
 }
