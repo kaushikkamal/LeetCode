@@ -5,7 +5,7 @@ package LeetCode;
 import java.util.*;
 
 public class LongestWordInDictionaryThroughDeleting {
-    public String findLongestWord(String s, List<String> dictionary) {
+    public String findLongestWord(String s, ArrayList<String> dictionary) {
         Collections.sort(dictionary, (a, b) -> {
             int diff = b.length() - a.length();
 

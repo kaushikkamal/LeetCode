@@ -4,9 +4,9 @@ package LeetCode;
 import java.util.ArrayList;
 
 public class PascalTriangleII {
-    public List<Integer> getRow(int rowIndex) {
+    public ArrayList<Integer> getRow(int rowIndex) {
         // nC0 = 1
-        List<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         long prev = 1;
         list.add(1);
 

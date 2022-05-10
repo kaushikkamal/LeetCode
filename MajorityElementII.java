@@ -4,8 +4,8 @@ package LeetCode;
 import java.util.*;
 
 public class MajorityElementII {
-    public List<Integer> majorityElement(int[] nums) {
-        List<Integer> list = new ArrayList<>();
+    public ArrayList<Integer> majorityElement(int[] nums) {
+        ArrayList<Integer> list = new ArrayList<>();
 
         if (nums.length == 1) {
             list.add(nums[0]);
