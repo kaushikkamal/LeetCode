@@ -1,4 +1,3 @@
-package LeetCode;
 
 // https://leetcode.com/problems/backspace-string-compare/
 public class BackspaceStringCompare {
