@@ -1,6 +1,5 @@
-package LeetCode;
-
 // https://leetcode.com/problems/combinations/
+
 import java.util.List;
 import java.util.ArrayList;
 
