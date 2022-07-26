@@ -1,11 +1,12 @@
 // https://leetcode.com/problems/arranging-coins/
+package LeetCode;
 
 // TC -> O(log(n))
 // SC -> O(1)
 
 public class ArrangingCoins {
 
-    // Consider as Infinite Sorted Array Problem 
+    // Consider as Infinite Sorted Array Problem
 
     public int arrangeCoins(int n) {
         long start = 1;
