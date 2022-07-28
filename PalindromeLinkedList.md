@@ -1,7 +1,5 @@
 https://leetcode.com/problems/palindrome-linked-list/
 
-    package LeetCode;
-
     public class PalindromeLinkedList {
         public static ListNode midPoint(ListNode head) {
             ListNode fast = head;
@@ -24,7 +22,6 @@ https://leetcode.com/problems/palindrome-linked-list/
 
             while (currNode != null) {
                 ListNode nextNode = currNode.next;
-
                 currNode.next = prevNode;
 
                 prevNode = currNode;

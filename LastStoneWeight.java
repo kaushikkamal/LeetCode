@@ -1,8 +1,7 @@
-package LeetCode;
+// https://leetcode.com/problems/last-stone-weight/
 
 import java.util.PriorityQueue;
 
-// https://leetcode.com/problems/last-stone-weight/
 public class LastStoneWeight {
     public int lastStoneWeight(int[] A) {
         PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);

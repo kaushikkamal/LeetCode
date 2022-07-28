@@ -1,5 +1,3 @@
-package LeetCode;
-
 import java.util.HashMap;
 
 public class LargestSubarrayWith0Sum {

@@ -1,7 +1,5 @@
 // https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 
-package LeetCode;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,8 +1,7 @@
-package LeetCode;
+// https://leetcode.com/problems/minimum-index-sum-of-two-lists/
 
 import java.util.*;
 
-// https://leetcode.com/problems/minimum-index-sum-of-two-lists/
 public class MinimumIndexSumOfTwoLists {
     public String[] findRestaurant(String[] list1, String[] list2) {
         int max = Integer.MAX_VALUE;
