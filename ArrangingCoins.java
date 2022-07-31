@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/arranging-coins/
-package LeetCode;
 
 // TC -> O(log(n))
 // SC -> O(1)
