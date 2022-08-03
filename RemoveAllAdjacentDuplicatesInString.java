@@ -1,6 +1,7 @@
+// https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+
 package LeetCode;
 
-// https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 public class RemoveAllAdjacentDuplicatesInString {
     public static String removeDuplicates(String s) {
         StringBuilder sb = new StringBuilder();

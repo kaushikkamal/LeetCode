@@ -1,6 +1,5 @@
-package LeetCode;
-
 // https://leetcode.com/problems/trapping-rain-water/
+
 public class TrappingRainWater {
     // TC -> O(N)
     // SC -> O(1)
