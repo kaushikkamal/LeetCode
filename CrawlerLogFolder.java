@@ -1,6 +1,5 @@
-package LeetCode;
-
 // https://leetcode.com/problems/crawler-log-folder/
+
 public class CrawlerLogFolder {
     public int minOperations(String[] logs) {
         int c = 0;

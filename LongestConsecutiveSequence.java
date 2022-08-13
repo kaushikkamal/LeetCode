@@ -1,8 +1,8 @@
+// https://leetcode.com/problems/longest-consecutive-sequence/
+
 package LeetCode;
 
 import java.util.HashSet;
-
-// https://leetcode.com/problems/longest-consecutive-sequence/
 
 public class LongestConsecutiveSequence {
     public int longestConsecutive(int[] nums) {

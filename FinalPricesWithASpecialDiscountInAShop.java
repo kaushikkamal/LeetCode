@@ -1,7 +1,5 @@
 // https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/
 
-package LeetCode;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 

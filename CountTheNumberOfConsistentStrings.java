@@ -1,6 +1,5 @@
-package LeetCode;
-
 // https://leetcode.com/problems/count-the-number-of-consistent-strings/
+
 public class CountTheNumberOfConsistentStrings {
 
     public int countConsistentStrings(String allowed, String[] words) {

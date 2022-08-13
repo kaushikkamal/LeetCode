@@ -1,8 +1,7 @@
-package LeetCode;
+// https://leetcode.com/problems/count-items-matching-a-rule/
 
 import java.util.List;
 
-// https://leetcode.com/problems/count-items-matching-a-rule/
 public class CountItemsMatchingARule {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int c = 0;
