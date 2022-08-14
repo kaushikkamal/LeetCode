@@ -2,6 +2,7 @@
 
 // TC -> O(Mlog(n))
 // SC -> O(1)
+package LeetCode;
 
 public class SplitArrayLargestSum {
     private static int partsRequired(int[] nums, int mid) {

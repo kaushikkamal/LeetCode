@@ -2,6 +2,7 @@
 
 // TC -> O(log(n))
 // SC -> O(1)
+package LeetCode;
 
 public class ValidPerfectSquare {
     public static boolean isPerfectSquare(int num) {

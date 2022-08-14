@@ -1,7 +1,9 @@
+// https://leetcode.com/problems/design-hashmap/
+
+package LeetCode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
-
-// https://leetcode.com/problems/design-hashmap/
 
 public class DesignHashMap {
     class Info {

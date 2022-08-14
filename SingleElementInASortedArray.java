@@ -2,6 +2,7 @@
 
 // TC -> O(log(N))
 // SC -> O(1)
+package LeetCode;
 
 public class SingleElementInASortedArray {
     public int singleNonDuplicate(int[] nums) {

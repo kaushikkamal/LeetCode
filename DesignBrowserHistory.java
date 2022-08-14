@@ -2,6 +2,7 @@
 
 // TC -> O(n)
 // SC -> O(1)
+package LeetCode;
 
 public class DesignBrowserHistory {
     public class Node {

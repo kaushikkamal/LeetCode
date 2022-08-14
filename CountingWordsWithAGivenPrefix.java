@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/counting-words-with-a-given-prefix/
+package LeetCode;
 
 public class CountingWordsWithAGivenPrefix {
     public int prefixCount(String[] words, String pref) {

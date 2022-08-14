@@ -2,6 +2,7 @@
 
 // TC -> O(NlogM)
 // SC -> O(1)
+package LeetCode;
 
 public class FindTheSmallestDivisorGivenAThreshold {
     private boolean isValid(int[] nums, int mid, int threshold) {

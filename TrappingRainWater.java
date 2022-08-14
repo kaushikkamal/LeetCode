@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/trapping-rain-water/
+package LeetCode;
 
 public class TrappingRainWater {
     // TC -> O(N)

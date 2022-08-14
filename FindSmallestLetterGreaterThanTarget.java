@@ -2,6 +2,7 @@
 
 // TC -> O(log(n))
 // SC -> O(1)
+package LeetCode;
 
 public class FindSmallestLetterGreaterThanTarget {
     public char nextGreatestLetter(char[] letters, char target) {

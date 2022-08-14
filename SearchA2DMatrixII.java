@@ -3,6 +3,8 @@
 // TC -> O(M+N) // M ros N col
 // SC -> O(1)
 
+package LeetCode;
+
 public class SearchA2DMatrixII {
     public boolean searchMatrix(int[][] matrix, int target) {
 

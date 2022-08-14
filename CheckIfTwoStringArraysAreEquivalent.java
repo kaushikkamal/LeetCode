@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent
+package LeetCode;
 
 public class CheckIfTwoStringArraysAreEquivalent {
     // 1 ms 41.8 MB

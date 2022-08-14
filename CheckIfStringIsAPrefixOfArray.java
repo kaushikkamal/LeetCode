@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/
+package LeetCode;
 
 public class CheckIfStringIsAPrefixOfArray {
     public boolean isPrefixString(String s, String[] words) {

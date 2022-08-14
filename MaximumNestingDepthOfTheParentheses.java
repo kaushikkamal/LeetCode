@@ -2,6 +2,7 @@
 
 // TC -> O(N)
 // SC -> O(1)
+package LeetCode;
 
 public class MaximumNestingDepthOfTheParentheses {
     public int maxDepth(String s) {

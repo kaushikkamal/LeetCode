@@ -1,3 +1,4 @@
+package LeetCode;
 
 public class BestTimeToBuyAndSellStockII {
     public int maxProfit(int[] prices) {

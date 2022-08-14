@@ -2,6 +2,7 @@
 
 // TC -> O(N)
 // SC -> O(1)
+package LeetCode;
 
 public class KthMissingPositiveNumber {
     public int findKthPositive(int[] arr, int k) {

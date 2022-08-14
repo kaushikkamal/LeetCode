@@ -3,6 +3,8 @@
 // Time complexity: O(n * log(SIZE)), where SIZE is the size of the search space (sum of weights - max weight).
 // Space complexity: O(1).
 
+package LeetCode;
+
 public class CapacityToShipPackagesWithinDDays {
     public int getRequiredDays(int[] weights, int days, int minimumDays) {
         int weightSum = 0;

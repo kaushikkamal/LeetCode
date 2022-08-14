@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/largest-rectangle-in-histogram/
+package LeetCode;
 
 import java.util.Stack;
 

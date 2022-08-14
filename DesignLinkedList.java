@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/design-linked-list
+package LeetCode;
 
 public class DesignLinkedList {
     int length;
@@ -100,7 +101,7 @@ public class DesignLinkedList {
             this.length--;
             return;
         }
-        
+
         Node cur = head;
         Node prev = null;
         int c = 0;

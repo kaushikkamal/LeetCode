@@ -2,6 +2,7 @@
 
 // TC -> O(N)
 // SC -> O(1)
+package LeetCode;
 
 public class MissingNumber {
     public int missingNumber(int[] arr) {

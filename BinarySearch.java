@@ -2,6 +2,7 @@
 
 // TC -> O(log(n))
 // SC -> O(1)
+package LeetCode;
 
 public class BinarySearch {
     public int search(int[] arr, int target) {

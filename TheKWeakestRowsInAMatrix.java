@@ -1,7 +1,9 @@
+// https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
+
+package LeetCode;
+
 import java.util.ArrayList;
 import java.util.Collections;
-
-// https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
 
 public class TheKWeakestRowsInAMatrix {
     static class Info {

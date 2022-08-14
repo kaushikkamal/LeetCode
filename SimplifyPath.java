@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/simplify-path/
+package LeetCode;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;

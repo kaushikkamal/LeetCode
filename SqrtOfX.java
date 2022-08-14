@@ -2,6 +2,7 @@
 
 // TC -> O(log(n))
 // SC -> O(1)
+package LeetCode;
 
 public class SqrtOfX {
     public int mySqrt(int x) {

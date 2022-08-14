@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/koko-eating-bananas/
+package LeetCode;
 
 public class KokoEatingBananas {
     public int minEatingSpeed(int[] piles, int h) {

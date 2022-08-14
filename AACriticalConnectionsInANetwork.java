@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/critical-connections-in-a-network/
+package LeetCode;
 
 import java.util.ArrayList;
 import java.util.Arrays;

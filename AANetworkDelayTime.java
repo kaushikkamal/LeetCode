@@ -1,7 +1,7 @@
 //https://leetcode.com/problems/network-delay-time/
+package LeetCode;
 
 import java.util.*;
-
 import javafx.util.Pair;
 
 public class AANetworkDelayTime {

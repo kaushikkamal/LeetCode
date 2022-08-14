@@ -1,8 +1,12 @@
 // https://leetcode.com/problems/intersection-of-two-arrays/
 
-
 // TC -> O(log(n))
 // SC -> O(N)
+
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class IntersectionOfTwoArrays {
     public int[] intersection(int[] nums1, int[] nums2) {

@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/concatenation-of-array/
+package LeetCode;
 
 public class ConcatenationOfArray {
     public static int[] getConcatenation(int[] nums) {

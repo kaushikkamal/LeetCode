@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/count-the-number-of-consistent-strings/
+package LeetCode;
 
 public class CountTheNumberOfConsistentStrings {
 

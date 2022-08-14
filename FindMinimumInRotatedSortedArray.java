@@ -2,6 +2,7 @@
 
 // TC -> O(log(n))
 // SC -> O()
+package LeetCode;
 
 public class FindMinimumInRotatedSortedArray {
 

@@ -1,7 +1,8 @@
+// https://leetcode.com/problems/design-hashset/
+package LeetCode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
-
-// https://leetcode.com/problems/design-hashset/
 
 public class DesignHashSet {
     ArrayList<LinkedList<Integer>> list;
