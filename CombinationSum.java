@@ -5,29 +5,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CombinationSum {
-    public static void combination(int index, int[] candidates, int target, List<List<Integer>> list,
-            List<Integer> singleList) {
-        if (index == candidates.length) {
-            if (target == 0) {
-                list.add(new ArrayList<>(singleList));
-            }
+    private void combination(int[] candidates, int i, List<Integer> list, List<List<Integer>> ans, int target) {
+
+        // base case
+        if (target == 0) {
+            ans.add(new ArrayList<>(list));
             return;
         }
 
-        if (target >= candidates[index]) {
-            singleList.add(candidates[index]);
-            combination(index, candidates, target - candidates[index], list, singleList);
-            singleList.remove(singleList.size() - 1);
+        if (i == candidates.length) {
+            return;
         }
-        combination(index + 1, candidates, target, list, singleList);
+
+        if (target >= candidates[i]) {
+            list.add(candidates[i]);
+            combination(candidates, i, list, ans, target - candidates[i]);
+            list.remove(list.size() - 1);
+        }
+
+        combination(candidates, i + 1, list, ans, target);
     }
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> list = new ArrayList<>();
-        List<Integer> singleList = new ArrayList<>();
+        List<List<Integer>> ans = new ArrayList<>();
 
-        combination(0, candidates, target, list, singleList);
+        combination(candidates, 0, new ArrayList<>(), ans, target);
 
-        return list;
+        return ans;
     }
 }
