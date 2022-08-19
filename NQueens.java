@@ -1,105 +1,84 @@
+// https://leetcode.com/problems/n-queens/
+
 package LeetCode;
 
-// https://leetcode.com/problems/n-queens/
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class NQueens {
-    public static boolean isSafe(int row, int col, char[][] board) {
-
-        int i, j, r, c;
-        // vertical
-        for (i = 0; i < board.length; i++) {
-            if (board[i][col] == 'Q') {
-                return false;
-            }
-        }
-
-        // horizontal
-        for (j = 0; j < board.length; j++) {
-            if (board[row][j] == 'Q') {
-                return false;
-            }
-        }
+    private boolean isSafe(int row, int col, char[][] board, int n) {
+        int tempRow = row;
+        int tempCol = col;
 
         // upper left
-        r = row;
-        for (c = col; r >= 0 && c >= 0; r--, c--) {
-            if (board[r][c] == 'Q') {
+        while (row >= 0 && col >= 0) {
+            if (board[row][col] == 'Q') {
                 return false;
             }
+            row--;
+            col--;
         }
 
-        // upper right
-        r = row;
-        for (c = col; r >= 0 && c < board.length; r--, c++) {
-            if (board[r][c] == 'Q') {
+        row = tempRow;
+        col = tempCol;
+
+        // left
+        while (col >= 0) {
+            if (board[row][col] == 'Q') {
                 return false;
             }
+            col--;
         }
 
-        // lower left
-        r = row;
-        for (c = col; r < board.length && c >= 0; r++, c--) {
-            if (board[r][c] == 'Q') {
-                return false;
-            }
-        }
+        col = tempCol;
 
-        // lower right
-        r = row;
-        for (c = col; r < board.length && c < board.length; r++, c++) {
-            if (board[r][c] == 'Q') {
+        // bottom left
+        while (row < n && col >= 0) {
+            if (board[row][col] == 'Q') {
                 return false;
             }
+            row++;
+            col--;
         }
 
         return true;
     }
 
-    public static void saveBoard(char[][] board, List<List<String>> allBoard) {
-        String row = "";
-        List<String> newBoard = new ArrayList<>();
-
-        for (int i = 0; i < board.length; i++) {
-            row = "";
-
-            for (int j = 0; j < board.length; j++) {
-                if (board[i][j] == 'Q') {
-                    row += 'Q';
-                } else {
-                    row += '.';
-                }
+    private void solve(int col, char[][] board, List<List<String>> ans, int n) {
+        if (col == n) {
+            List<String> list = new ArrayList<>();
+            for (char[] ch : board) {
+                list.add(new String(ch));
             }
-            newBoard.add(row);
-        }
-        allBoard.add(newBoard);
-    }
-
-    public static void solve(char[][] board, List<List<String>> allBoard, int col) {
-
-        if (col == board.length) {
-            saveBoard(board, allBoard);
+            ans.add(list);
             return;
         }
 
-        for (int row = 0; row < board.length; row++) {
-            if (isSafe(row, col, board)) {
+        for (int row = 0; row < n; row++) {
+            if (isSafe(row, col, board, n)) {
                 board[row][col] = 'Q';
-
-                solve(board, allBoard, col + 1);
-
+                solve(col + 1, board, ans, n);
                 board[row][col] = '.';
             }
         }
+
     }
 
     public List<List<String>> solveNQueens(int n) {
-        List<List<String>> allBoard = new ArrayList<>();
+        List<List<String>> ans = new ArrayList<>();
         char[][] board = new char[n][n];
 
-        solve(board, allBoard, 0);
+        for (char[] ch : board) {
+            Arrays.fill(ch, '.');
+        }
 
-        return allBoard;
+        solve(0, board, ans, n);
+
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new NQueens().solveNQueens(4));
     }
 }
