@@ -1,9 +1,10 @@
+// https://leetcode.com/problems/reorder-data-in-log-files/
+
 package LeetCode;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
-// https://leetcode.com/problems/reorder-data-in-log-files/
 public class ReorderDataInLogFiles {
     public String[] reorderLogFiles(String[] logs) {
         Comparator<String> comp = new Comparator<String>() {
