@@ -7,9 +7,6 @@ class Item {
     int max;
     int min;
 
-    Item() {
-    }
-
     Item(int size, int max, int min) {
         this.size = size;
         this.max = max;
