@@ -6,7 +6,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 
-public class DFSofGraph {
+public class DFSOfGraph {
     // public ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>>
     // adj) {
     // ArrayList<Integer> ans = new ArrayList<>();
