@@ -2,33 +2,40 @@
 
 package LeetCode;
 
-public class FloodFill {
-    private void dfs(int[][] ans, int[][] image, int sr, int sc, int initialColor, int newColor, int[] dr, int[] dc) {
-        ans[sr][sc] = newColor;
+import java.util.Arrays;
 
-        int n = ans.length;
-        int m = ans[0].length;
+public class FloodFill {
+    private void dfs(int[][] newImage, int[][] image, int sr, int sc, int color, int[] dr, int[] dc) {
+        int m = image.length;
+        int n = image[0].length;
+
+        newImage[sr][sc] = color;
 
         for (int i = 0; i < 4; i++) {
-            int row = sr + dr[i];
-            int col = sc + dc[i];
+            int newRow = sr + dr[i];
+            int newCol = sc + dc[i];
 
-            if (row >= 0 && row < n && col >= 0 && col < m && image[row][col] == initialColor
-                    && ans[row][col] != newColor) {
-                dfs(ans, image, row, col, initialColor, newColor, dr, dc);
+            if (newRow >= 0 && newRow < m && newCol >= 0 && newCol < n && newImage[newRow][newCol] == image[sr][sc]
+                    && newImage[newRow][newCol] != color) {
+                dfs(newImage, image, newRow, newCol, color, dr, dc);
             }
         }
     }
 
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        int[][] ans = image;
-        int initialColor = image[sr][sc];
+        int m = image.length;
+        int n = image[0].length;
 
         int[] dr = { -1, 0, 1, 0 };
         int[] dc = { 0, 1, 0, -1 };
+        int[][] newImage = new int[m][n];
 
-        dfs(ans, image, sr, sc, initialColor, color, dr, dc);
+        for (int i = 0; i < m; i++) {
+            newImage[i] = Arrays.copyOf(image[i], image[i].length);
+        }
 
-        return ans;
+        dfs(newImage, image, sr, sc, color, dr, dc);
+
+        return newImage;
     }
 }
