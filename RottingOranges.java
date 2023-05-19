@@ -17,7 +17,8 @@ class Pair {
 
 public class RottingOranges {
     public int orangesRotting(int[][] grid) {
-        int[][] ans = grid;
+        // int[][] ans = grid;
+        int[][] ans = grid.clone();
         Queue<Pair> q = new LinkedList<>();
         int m = grid.length;
         int n = grid[0].length;
