@@ -4,6 +4,12 @@ package LeetCode;
 public class TrappingRainWater {
     // TC -> O(N)
     // SC -> O(1)
+    public static void main(String[] args) {
+        // int[] height = { 1, 0, 2, 1, 0, 6, 2, 1, 0, 2 };
+        int[] height = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+        System.out.println(trap(height));
+    }
+
     public static int trap(int[] height) {
         int ans = 0;
         int left = 0;

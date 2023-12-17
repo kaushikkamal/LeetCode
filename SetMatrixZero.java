@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/set-matrix-zeroes/description/
 package LeetCode;
 
 import java.util.Arrays;
@@ -35,7 +36,7 @@ public class SetMatrixZero {
     }
 
     public static void main(String[] args) {
-        int[][] mat = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+        int[][] mat = { { 1, 1, 1 }, { 1, 0, 1 }, { 1, 1, 1 } };
         setZeroes(mat);
     }
 }
