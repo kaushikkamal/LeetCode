@@ -85,7 +85,7 @@ public class KnapsackProblem {
         return dp[n - 1][W];
     }
 
-    // Mempozation
+    // Memoization
     // TC -> O(N * W)
     // SC -> O(N * W) + O(N)
     private int countMax___(int index, int W, int[] wt, int[] val, int[][] dp) {

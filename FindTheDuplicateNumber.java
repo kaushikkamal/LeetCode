@@ -1,4 +1,5 @@
 package LeetCode;
+
 // https://leetcode.com/problems/find-the-duplicate-number/
 import java.util.Arrays;
 import java.util.HashSet;
@@ -6,6 +7,25 @@ import java.util.Set;
 
 public class FindTheDuplicateNumber {
     public int findDuplicate(int[] nums) {
+        int slow = nums[0];
+        int fast = nums[0];
+
+        do {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        } while (slow != fast);
+
+        fast = nums[0];
+
+        while (slow != fast) {
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+
+        return slow;
+    }
+
+    public int findDuplicate_(int[] nums) {
         Arrays.sort(nums);
 
         for (int i = 1; i < nums.length; i++) {

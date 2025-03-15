@@ -23,4 +23,10 @@ public class NonOverlappingIntervals {
 
         return count;
     }
+
+    public static void main(String[] args) {
+        int[][] intervals = { { 2, 3 }, { 3, 5 }, { 2, 6 }, { 4, 7 }, { 5, 9 } };
+
+        System.out.println(eraseOverlapIntervals(intervals));
+    }
 }
